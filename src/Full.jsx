@@ -269,8 +269,8 @@ giang-Khoa-Luyen-thi-TN-THPT-2025-danh-cho-2K7.jpg"
     <li>
       <a href="#">
         <img 
-          src="https://cdn.mclass.vn/blog/uploads/2022/04/21021448/big-btn-tai-lieu-min.png" 
-          alt="Tài liệu" 
+          src="https://cdn.mclass.vn/blog/uploads/2022/04/21021447/big-btn-sach-min.png" 
+          alt="Sach" 
         />
       </a>
     </li>
