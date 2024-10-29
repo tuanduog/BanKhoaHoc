@@ -1,13 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Full from './Full'; // Your main page component
-import BangVinhDanh from './bangvinhdanh'; // The component to show on a different page
+import Full from './Full'; 
+import BangVinhDanh from './bangvinhdanh'; 
+import TaiLieu from './tailieu/tailieu';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Full />} />
-        <Route path="/bangvinhdanh" element={<BangVinhDanh />} /> {/* Added leading slash */}
+        <Route path="/bangvinhdanh" element={<BangVinhDanh />} />
+        <Route path="/tailieu/tailieu" element={<TaiLieu/>}/>
       </Routes>
     </Router>
   );

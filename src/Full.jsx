@@ -101,115 +101,115 @@ const Full = () => {
           <p className="danhmuc">DANH MỤC</p>
 
           <li>
-            <a href="">KHÓA 2K6 - LUYỆN THI THPT QG 2024</a>
+            <a href="#">KHÓA 2K6 - LUYỆN THI THPT QG 2024</a>
             <ul className="sub-menu-side">
               <li>
                 <strong>KHÓA 2K6 - LUYỆN THI THPT QG 2024</strong>
               </li>
               <li>
-                <a href="">LIVE C - Luyện Thi Chuyên Đề</a>
+                <a href="#">LIVE C - Luyện Thi Chuyên Đề</a>
               </li>
               <li>
-                <a href="">LIVE T - Luyện Đề</a>
+                <a href="#">LIVE T - Luyện Đề</a>
               </li>
               <li>
-                <a href="">LIVE G - Tổng Ôn</a>
+                <a href="#">LIVE G - Tổng Ôn</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="">KHÓA ĐÁNH GIÁ NĂNG LỰC 2K6</a>
+            <a href="#">KHÓA ĐÁNH GIÁ NĂNG LỰC 2K6</a>
             <ul className="sub-menu-side">
               <li>
                 <strong>KHOA ĐÁNH GIÁ NĂNG LỰC 2K6</strong>
               </li>
               <li>
-                <a href="">Đánh giá năng lực ĐHQGHN</a>
+                <a href="#">Đánh giá năng lực ĐHQGHN</a>
               </li>
               <li>
-                <a href="">Đánh giá năng lực ĐHQG TP Hồ Chí Minh</a>
+                <a href="#">Đánh giá năng lực ĐHQG TP Hồ Chí Minh</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="">Chinh Phục Lớp 11</a>
+            <a href="#">Chinh Phục Lớp 11</a>
             <ul className="sub-menu-side">
               <li>
                 <strong>Chinh Phục Lớp 11</strong>
               </li>
               <li>
-                <a href="">Toán - Thầy Trần Lâm</a>
+                <a href="#">Toán - Thầy Trần Lâm</a>
               </li>
               <li>
-                <a href="">Vật Lý - Thầy Kiêu</a>
+                <a href="#">Vật Lý - Thầy Kiêu</a>
               </li>
               <li>
-                <a href="">Hóa - Thầy Ngọc</a>
+                <a href="#">Hóa - Thầy Ngọc</a>
               </li>
               <li>
-                <a href="">Ngữ Văn - Cô Bình</a>
+                <a href="#">Ngữ Văn - Cô Bình</a>
               </li>
               <li>
-                <a href="">Toán - Thầy Hồ Đức Thuận</a>
+                <a href="#">Toán - Thầy Hồ Đức Thuận</a>
               </li>
               <li>
-                <a href="">Vật Lý - Thầy Vũ Tuấn Anh</a>
+                <a href="#">Vật Lý - Thầy Vũ Tuấn Anh</a>
               </li>
               <li>
-                <a href="">Hóa - Thầy Phạm Văn Thuận</a>
+                <a href="#">Hóa - Thầy Phạm Văn Thuận</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="">Chinh Phục Lớp 10</a>
+            <a href="#">Chinh Phục Lớp 10</a>
             <ul className="sub-menu-side">
               <li>
                 <strong>Chinh Phục Lớp 10</strong>
               </li>
               <li>
-                <a href="">Toán</a>
+                <a href="#">Toán</a>
               </li>
               <li>
-                <a href="">Ngữ Văn - Cô Bình</a>
+                <a href="#">Ngữ Văn - Cô Bình</a>
               </li>
               <li>
-                <a href="">Hóa Học - Cô Hằng</a>
+                <a href="#">Hóa Học - Cô Hằng</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="">BẬC ĐẠI HỌC</a>
+            <a href="#">BẬC ĐẠI HỌC</a>
             <ul className="sub-menu-side">
               <li>
                 <strong>BẬC ĐẠI HỌC</strong>
               </li>
               <li>
-                <a href="">PRE TOEIC</a>
+                <a href="#">PRE TOEIC</a>
               </li>
               <li>
-                <a href="">VẬT LÝ ĐẠI CƯƠNG</a>
+                <a href="#">VẬT LÝ ĐẠI CƯƠNG</a>
               </li>
               <li>
-                <a href="">TOÁN CAO CẤP</a>
+                <a href="#">TOÁN CAO CẤP</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="">IELTS</a>
+            <a href="#">IELTS</a>
             <ul className="sub-menu-side">
               <li>
                 <strong>IELTS</strong>
               </li>
               <li>
-                <a href="">Khóa LIVE</a>
+                <a href="#">Khóa LIVE</a>
               </li>
               <li>
-                <a href="">Khóa IELTS CLC</a>
+                <a href="#">Khóa IELTS CLC</a>
               </li>
             </ul>
           </li>
@@ -243,14 +243,15 @@ const Full = () => {
   </div>
   
   <ul className="select">
-    <li>
-      <a href="#">
-        <img 
-          src="https://cdn.mclass.vn/blog/uploads/2022/04/21021448/big-btn-luyen-de-min.png" 
-          alt="Luyện đề" 
-        />
-      </a>
+  <li>
+    <Link to="/tailieu/tailieu">
+      <img 
+      src="https://cdn.mclass.vn/blog/uploads/2022/04/21021448/big-btn-luyen-de-min.png" 
+      alt="Luyện đề" 
+    />
+  </Link>
     </li>
+
     <li>
       <a href="#">
         <img 

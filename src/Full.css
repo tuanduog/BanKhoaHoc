@@ -41,11 +41,12 @@
 
 img.dropdown{
     position: absolute;
-    margin-left: 235px;
+    margin-left: 239px;
     width: 10px;
     height: auto;
 }
 .dm {
+    padding-left: 15px;
     display: flex;
     margin-right: -40px;
 }
@@ -114,7 +115,7 @@ img.dropdown{
     gap: 8px; /* Space between the anchor and image */
     cursor: pointer;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 21px !important;
     background-color: #e0e0e0 !important;
     transition: background-color 0.3s ease;
     width: 300px;
@@ -127,12 +128,12 @@ img.dropdown{
 }
 
 .sub-header-menu {
-    margin-top: 10px;
+    margin-top: 3px !important;
     position: absolute;
     padding: 10px;
     background-color: #f8f9ff;
     list-style-type: none;
-    width: fit-content; /* Adjusts width to fit content */
+    width: 300px !important; /* Adjusts width to fit content */
     max-width: 90vw;    /* Ensures the menu doesn't exceed 90% of the viewport width */
     height: auto;       /* Automatically adjusts height based on content */
     max-height: 80vh;   /* Limits height to avoid overflow */
@@ -170,7 +171,7 @@ img.dropdown{
     display: none;
     width: 540px;
     list-style-type: none;
-    height: 350px;
+    height: 375px !important;
 }
 
 .sub-header-menu li:hover .sub-header-menu1 {
@@ -361,7 +362,7 @@ img.dropdown{
 
 
 .body img {
-    padding-top: 5px;
+    padding-top: 9px;
     padding-left: 7px;
     padding-bottom: 5px;
     width: 333px;
