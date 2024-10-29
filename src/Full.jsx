@@ -1,8 +1,12 @@
 import "./Full.css";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo-land.png";
+import search from "./assets/search.png"
 import dropdownIcon from "./assets/drop.png";
-import BangVinhDanh from "./bangvinhdanh";
+import anh from "./assets/anh.jpg";
+import pnm from "./assets/pmn.jpg";
+import hoa from "./assets/hoa.jpg"
+
 const Full = () => {
     
   return (
@@ -10,10 +14,10 @@ const Full = () => {
       <div id="header">
         <img src={logo} alt="Logo" style={{ width: "90px", height: "45px" }} />
         <div className="header-menu">
-          <p id="course-books">
-            <a href="#">Khóa học & sách</a>
+          <div id="course-books">
+            <a href="#" className="dm">Khóa học & sách</a>
             <img className="dropdown" src={dropdownIcon} alt="Dropdown Icon" />
-          </p>
+          </div>
           <ul className="sub-header-menu">
             <li>
               <a href="#">KHÓA 2K6 - LUYỆN THI THPT QG 2024</a>
@@ -84,17 +88,7 @@ const Full = () => {
         <div className="search-container">
           <input type="text" placeholder="Tìm kiếm khóa học" />
           <button type="submit">
-            <svg
-              className="search-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5
-                        16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 
-                        9.5 11.99 14 9.5 14z"
-              />
-            </svg>
+            <img src={search} alt="Search" className="srch" />
           </button>
         </div>
         <div className="button">
@@ -224,9 +218,8 @@ const Full = () => {
   <div className="poster">
     <a href="#">
       <img 
-        src="https://cdn.mclass.vn/blog/uploads/2024/03/11111621/Khai-
-giang-Khoa-Luyen-thi-TN-THPT-2025-danh-cho-2K7.jpg" 
-        style={{ height: "400px", width: "650px" }} 
+        src="https://cdn.mclass.vn/blog/uploads/2024/08/13181118/2k7.jpg" 
+        style={{width: "720px"}}
         alt="Khai giảng Khóa Luyện thi TN THPT 2025" 
       />
     </a>
@@ -303,7 +296,7 @@ giang-Khoa-Luyen-thi-TN-THPT-2025-danh-cho-2K7.jpg"
                         </div>
                         <div className="body">
                             <a href=""> <img
-                                    src="https://d3484gt1o8rlzm.cloudfront.net/mclass/course/G2K6G01/G2K6G01_1676286538.jpg"
+                                    src={anh}
                                     alt=""/></a>
                             <h5><a href="">LIVE G -Tổng ôn - Toán học 2K6 - HTT</a></h5>
                             <div className="text">
@@ -321,7 +314,7 @@ giang-Khoa-Luyen-thi-TN-THPT-2025-danh-cho-2K7.jpg"
                         </div>
                         <div className="body">
                             <a href=""> <img
-                                    src="https://d3484gt1o8rlzm.cloudfront.net/mclass/course/G2K6G01/G2K6G01_1676286538.jpg"
+                                    src={pnm}
                                     alt=""/></a>
                             <h5><a href="">LIVE G -Tổng ôn - Toán học 2K6 - HTT</a></h5>
                             <div className="text">
@@ -339,7 +332,7 @@ giang-Khoa-Luyen-thi-TN-THPT-2025-danh-cho-2K7.jpg"
                         </div>
                         <div className="body">
                             <a href=""> <img
-                                    src="https://d3484gt1o8rlzm.cloudfront.net/mclass/course/G2K6G01/G2K6G01_1676286538.jpg"
+                                    src={hoa}
                                     alt=""/></a>
                             <h5><a href="">LIVE G -Tổng ôn - Toán học 2K6 - HTT</a></h5>
                             <div className="text">
