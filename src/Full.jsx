@@ -98,7 +98,7 @@ const Full = () => {
       </div>
       <div className="containt">
         <ul className="menu-side">
-          <p>DANH MỤC</p>
+          <p className="danhmuc">DANH MỤC</p>
 
           <li>
             <a href="">KHÓA 2K6 - LUYỆN THI THPT QG 2024</a>
