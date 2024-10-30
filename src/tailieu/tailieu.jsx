@@ -2,11 +2,14 @@ import './tailieu.css';
 import logo from "../assets/logo-land.png";
 import search from "../assets/search.png"
 import dropdownIcon from "../assets/drop.png";
+import { Link } from "react-router-dom";
 const Tailieu = () => {
   return (
     <div id="main">
       <div id="header">
-        <img src={logo} alt="Logo" style={{ width: "90px", height: "45px" }} />
+      <Link to="/">
+                <img src={logo} alt="Logo" style={{ width: "90px", height: "45px", cursor: "pointer"}} />
+            </Link>
         <div className="header-menu">
           <div id="course-books">
             <a href="#" className="dm">Khóa học & sách</a>
@@ -229,7 +232,6 @@ const Tailieu = () => {
             </tr>
           </tbody>
         </table>
-
                 <div className="footer-wrap">
                     <div className="container footer-content">
                         <div className="row">

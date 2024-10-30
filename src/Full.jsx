@@ -243,22 +243,22 @@ const Full = () => {
   </div>
   
   <ul className="select">
-  <li>
-    <Link to="/tailieu/tailieu">
+    <li>
+      <Link to="/luyende/luyende">
       <img 
       src="https://cdn.mclass.vn/blog/uploads/2022/04/21021448/big-btn-luyen-de-min.png" 
       alt="Luyện đề" 
     />
-  </Link>
+      </Link>
     </li>
 
     <li>
-      <a href="#">
+      <Link to="/tailieu/tailieu">
         <img 
           src="https://cdn.mclass.vn/blog/uploads/2022/04/21021448/big-btn-tai-lieu-min.png" 
           alt="Tài liệu" 
         />
-      </a>
+      </Link>
     </li>
     <li>
       <a href="#">

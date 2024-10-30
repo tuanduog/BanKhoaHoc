@@ -235,7 +235,7 @@ img.dropdown{
 }
 
 .sub-menu-side {
-
+    margin-top: -3px;
     margin-left: 16px;
     background-color: hsla(0, 0%, 100%, .97);
     border-radius: 0 10px 10px 10px;
@@ -245,7 +245,7 @@ img.dropdown{
     top: 124px;
     width: 950px;
     display: none;
-    height: 550px;
+    height: 505px;
     z-index: 1000;
 }
 
