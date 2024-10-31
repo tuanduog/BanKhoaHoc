@@ -92,8 +92,12 @@ const Full = () => {
           </button>
         </div>
         <div className="button">
+          <Link to="/login/login">
           <button className="login-button">Đăng nhập</button>
+          </Link>
+          <Link to="/register/register">
           <button className="register-button">Đăng ký</button>
+          </Link>
         </div>
       </div>
       <div className="containt">

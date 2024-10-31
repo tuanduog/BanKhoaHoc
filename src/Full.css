@@ -37,6 +37,7 @@
     border: 1px solid;
     border-radius: 20px;
     padding: 4px;
+    font-size: 16 !important;
 }
 
 img.dropdown{
@@ -61,15 +62,15 @@ img.dropdown{
     right: 15px;
 }
 
-.search-container input[type="text"] {
+/* .search-container input[type="text"] {
     flex: 1;
-    font-size: 13px;
+    font-size: 17px;
     height: 100%;
     border: none;
     outline: none;
     border-radius: 20px;
     background-color: #e0e0e0 !important;
-}
+} */
 
 .search-container button {
     margin-top: 2px;
@@ -88,7 +89,7 @@ img.dropdown{
 
 
 .login-button {
-    padding: 10px 20px;
+    width: 120px;
     color: #000;
     background-color: #e0e0e0 !important;
     border: none;
@@ -100,7 +101,7 @@ img.dropdown{
 
 
 .register-button {
-    padding: 10px 20px;
+    width: 120px;
     background-color: #c4423e;
     color: #fff;
     border: none;
