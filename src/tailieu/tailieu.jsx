@@ -232,42 +232,34 @@ const Tailieu = () => {
             </tr>
           </tbody>
         </table>
-                <div className="footer-wrap">
-                    <div className="container footer-content">
-                        <div className="row">
-                            <div className="r1">
-                                <h3><strong>CÔNG TY CỔ PHẦN GIÁO DỤC MCLASS VIỆT NAM</strong></h3>
-                                <br /><br />
-                                <p>Địa chỉ ĐKKD: Số 9 Ngõ 80 Phố Trung Kính, Phường Yên Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam.</p>
-                                <p>Mã số thuế: 0317485610</p>
-                                <p>Hotline:<strong>099.752.8636</strong>- <strong>024.5678.0343</strong></p>
-                                <p>Email: sales@mclass.vnd</p>
-                            </div>
-                            <div className="r1">
-                                <h3><strong>Hướng dẫn</strong></h3>
-                                <br /><br />
-                                <p>Lộ trình Luyện thi THPT Quốc gia</p>
-                                <p>Hướng dẫn Học sinh</p>
-                                <p>Hướng dẫn Giáo viên</p>
-                                <p>Sách Luyện Thi</p>
-                                <p>Giới thiệu mclass</p>
-                                <p>Liên hệ</p>
-                            </div>
-                            <div className="r1">
-                                <h3><strong>Chính sách</strong></h3>
-                                <br /><br />
-                                <p>Thông tin Sản phẩm – Dịch vụ do công ty cung cấp</p>
-                                <p>Chính sách và quy định chung</p>
-                                <p>Chính sách bảo mật</p>
-                                <p>Chính sách vận chuyển</p>
-                                <p>Chính sách hoàn trả</p>
-                                <p>Điều khoản dịch vụ</p>
-                                <p>Quy định và hình thức thanh toán</p>
-                                <p>Quy định thảo luận</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="row flex flex-row justify-content-between">
+    <div className="col col-lg-5 pb-1 pt-3 ps-5 ms-5">
+      <h5>
+        <strong>CÔNG TY CỔ PHẦN GIÁO DỤC MCLASS VIỆT NAM</strong>
+      </h5>
+      <br />
+      Địa chỉ: Hà Nội: Toà nhà số 15 Lô 02-C4, Trung Hoà, Cầu Giấy, Hà Nội, Vietnam
+      <br />
+      Mã số thuế: 0317485610
+      <br />
+      <span className="mr-3">
+        <i className="fa fa-phone" aria-hidden="true"></i> HOTLINE: 0934.556.247
+      </span>
+      <br />
+    </div>
+    <div className="col col-md-6 col-lg-3 pb-1 pt-3">
+      <h5>
+        <strong>Hướng dẫn</strong>
+      </h5>
+      <br />
+      <a href="#">Hướng dẫn Học sinh</a>
+      <br />
+      <a href="#">Hướng dẫn Giáo viên</a>
+      <br />
+      <a href="#">Liên hệ</a>
+      <br />
+    </div>
+  </div>
       </div>
     </div>
   );

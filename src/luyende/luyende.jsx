@@ -264,8 +264,8 @@ const luyende = () => {
     </table>
     </div>
     <div className="container footer-content mt-5">
-  <div className="row flex flex-row justify-content-between">
-    <div className="col col-lg-5 pb-1 pt-3">
+      <div className="row flex flex-row justify-content-between">
+        <div className="col col-lg-5 pb-1 pt-3">
       <h5>
         <strong>CÔNG TY CỔ PHẦN GIÁO DỤC MCLASS VIỆT NAM</strong>
       </h5>
