@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
   function xemMK(){
-    var x = document.getElementById("myInput");
+    var x = document.getElementById("logpass");
     if(x.type === "password"){
       x.type = "text";
     } else {
@@ -21,18 +21,18 @@ const Login = () => {
     <div id='loginForm' className="container d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '100%' }}>
       <div className="p-4" style={{ border: '1px solid black', backgroundColor: '#f8f9fa' }}>
         <form style={{ width: '350px' }}>
-          <h3 className="text-center mb-4">Login</h3>
+          <h3 className="text-center mb-4">Đăng nhập</h3>
 
           {/* Email Input */}
           <div className="form-group mb-3">
             <label className='mb-2'>Tên đăng nhập</label>
-            <input type="text" id="form2Example1" className="form-control" />
+            <input type="text" id="namelog" className="form-control" />
           </div>
 
           {/* Password Input */}
           <div className="form-group">
             <label className='mb-2'>Mật khẩu</label>
-            <input type="password" id="myInput" className="form-control" />
+            <input type="password" id="logpass" className="form-control" />
           </div>
           <div className='form-group'>
             <input type='checkbox' className='mt-2' onClick={xemMK}/> Xem mật khẩu
@@ -47,21 +47,21 @@ const Login = () => {
               </div>
             </div>
             <div className="col text-right">
-              <a href="#!">Forgot password?</a>
+              <a href="#!">Quên mật khẩu?</a>
             </div>
           </div>
 
           {/* Sign In Button */}
             <div className="d-flex justify-content-center">
                 <button type="submit" id='loginButton' className="btn btn-primary mb-4" style={{ width: '100%' }}>
-                    Sign in
+                    Đăng nhập
                 </button>
             </div>
 
           {/* Social Media Sign-In Options */}
           <div className="text-center">
-            <p>Not a member? <Link to="/register/register">Register</Link></p>
-            <p>or sign up with:</p>
+            <p>Chưa có tài khoản? <Link to="/register/register">Đăng ký</Link></p>
+            <p>hoặc đăng nhập với:</p>
             <div>
               <button type="button" className="btn btn-link btn-floating mx-1" style={{ color: '#3b5998' }}>
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
