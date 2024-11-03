@@ -2,9 +2,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
 const Login = () => {
+  const location = useLocation();
+  const [username, setUsername] = useState(location.state?.username || '');
   function xemMK(){
     var x = document.getElementById("logpass");
     if(x.type === "password"){
@@ -26,7 +29,8 @@ const Login = () => {
           {/* Email Input */}
           <div className="form-group mb-3">
             <label className='mb-2'>Tên đăng nhập</label>
-            <input type="text" id="namelog" className="form-control" />
+            <input type="text" id="namelog" className="form-control" value={username}
+        onChange={(e) => setUsername(e.target.value)}/>
           </div>
 
           {/* Password Input */}

@@ -2,51 +2,54 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
 import axios from 'axios';
 
 
-const Register = (isModalOpen) => {
-  function xemMK(){
-    var x = document.getElementById("logpass");
-    if(x.type === "password"){
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-  const [showRegisterForm, setShowRegisterForm] = useState(true);
-  const [showLoginForm, setShowLoginForm] = useState(true);
+const Register = () => {
+  // function xemMK(){
+  //   var x = document.getElementById("logpass");
+  //   if(x.type === "password"){
+  //     x.type = "text";
+  //   } else {
+  //     x.type = "password";
+  //   }
+  // }
+  // const [showRegisterForm, setShowRegisterForm] = useState(true);
+  // const [showLoginForm, setShowLoginForm] = useState(true);
 
   const [values, setValues] = useState({
     name: '',
     email: '',
     password: ''
-  })
-
-  useEffect(() => {
+  });
+  const navigate = useNavigate();
+  // useEffect(() => {
     
-    if (isModalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+  //   if (isModalOpen) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'auto';
+  //   }
 
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [isModalOpen]);
-  const handleRegisterClick = ()=> {
-    setShowRegisterForm(false);
-    setShowLoginForm(true);
-  };
+  //   return () => {
+  //     document.body.style.overflow = 'auto';
+  //   };
+  // }, [isModalOpen]);
+  // const handleRegisterClick = ()=> {
+  //   setShowRegisterForm(false);
+  //   setShowLoginForm(true);
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('http://localhost:8081/register/register', values)
       .then(res => {
-        console.log(res.data);
-        handleRegisterClick();
+        if(res.data.Status === "Success"){
+          navigate('/login/login', {state: {username: values.name}});
+          
+        } else alert("Error");
+        //handleRegisterClick();
       })
       .catch(err => {
         console.error("Error during registration:", err);
@@ -56,7 +59,7 @@ const Register = (isModalOpen) => {
 
   return (
     <>
-    {showRegisterForm && isModalOpen &&(
+
     <div id='registerForm' className="container d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '100%' }}>
       <div className="p-4" style={{ border: '1px solid black', backgroundColor: '#f8f9fa' }}>
         <form onSubmit={handleSubmit} style={{ width: '350px' }}>
@@ -119,71 +122,6 @@ const Register = (isModalOpen) => {
         </form>
       </div>
     </div>
-    )}
-    {showLoginForm && (
-    <div id='loginForm' className="container d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '100%' }}>
-      <div className="p-4" style={{ border: '1px solid black', backgroundColor: '#f8f9fa' }}>
-        <form method='POST' action='/user/createUser' style={{ width: '350px' }}>
-          <h3 className="text-center mb-4">Đăng nhập</h3>
-
-          {/* Email Input */}
-          <div className="form-group mb-3">
-            <label className='mb-2'>Tên đăng nhập</label>
-            <input type="text" id="logname" className="form-control" value={values.name}/>
-          </div>
-
-          {/* Password Input */}
-          <div className="form-group">
-            <label className='mb-2'>Mật khẩu</label>
-            <input type="password" id="logpass" className="form-control" required/>
-          </div>
-          <div className='form-group'>
-            <input type='checkbox' className='mt-2' onClick={xemMK}/> Xem mật khẩu
-          </div>
-
-          {/* Remember Me and Forgot Password */}
-          <div className="row" style={{ backgroundColor: '#f8f9fa', border: 'none' , padding: '27px', marginTop: '7px'}}>
-            <div className="col d-flex justify-content-center">
-              <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="form2Example31" defaultChecked />
-                <label className="form-check-label"> Remember me </label>
-              </div>
-            </div>
-            <div className="col text-right">
-              <a href="#!">Quên mật khẩu?</a>
-            </div>
-          </div>
-
-          {/* Sign In Button */}
-            <div className="d-flex justify-content-center">
-                <button type="submit" id='loginButton' className="btn btn-primary mb-4" style={{ width: '100%' }}>
-                    Đăng nhập
-                </button>
-            </div>
-
-          {/* Social Media Sign-In Options */}
-          <div className="text-center">
-            <p>Chưa có tài khoản? <Link to="/register/register">Đăng ký</Link></p>
-            <p>hoặc đăng nhập với:</p>
-            <div>
-              <button type="button" className="btn btn-link btn-floating mx-1" style={{ color: '#3b5998' }}>
-                <FontAwesomeIcon icon={faFacebook} size="lg" />
-              </button>
-              <button type="button" className="btn btn-link btn-floating mx-1" style={{ color: '#db4a39' }}>
-                <FontAwesomeIcon icon={faGoogle} size="lg" />
-              </button>
-              <button type="button" className="btn btn-link btn-floating mx-1" style={{ color: '#1da1f2' }}>
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
-              </button>
-              <button type="button" className="btn btn-link btn-floating mx-1" style={{ color: '#333' }}>
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    )}
     
     </>
   )
