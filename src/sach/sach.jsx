@@ -134,9 +134,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -157,9 +159,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -180,9 +184,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -205,9 +211,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -228,9 +236,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -251,9 +261,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -276,9 +288,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -299,9 +313,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -322,9 +338,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
