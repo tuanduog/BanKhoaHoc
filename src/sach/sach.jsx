@@ -134,9 +134,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -157,9 +159,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -180,9 +184,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -205,9 +211,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -228,9 +236,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -251,9 +261,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -276,9 +288,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -299,9 +313,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -322,9 +338,11 @@ const sach = () => {
                 <p style={{ marginBottom: "0.1rem" }}>
                   <strike>400,000đ</strike>
                 </p>
+                <Link to='/ctietsach'>
                 <a href="#" className="btn btn-primary">
                   Tham khảo thêm
                 </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -333,9 +351,9 @@ const sach = () => {
     </div>
   </div>
 </div>
-<div className="footer mt-5">
-      <div className="row flex flex-row justify-content-between">
-        <div className="col col-lg-5 pb-1 pt-3">
+
+<div className="row flex flex-row justify-content-between">
+    <div className="col col-lg-5 pb-1 pt-3 ps-5 ms-5">
       <h5>
         <strong>CÔNG TY CỔ PHẦN GIÁO DỤC MCLASS VIỆT NAM</strong>
       </h5>
@@ -362,7 +380,7 @@ const sach = () => {
       <br />
     </div>
   </div>
-</div>
+
 
     </div>
   )
